@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.right-content{
+    text-align: right;
+}
+.center-content{
+    text-align: center;
+}
+.container{
+    background-color: gray;
+    width: 250px;
+    /* height: 300px; */
+    /* padding: 100px 150px 70px 50px; */
+    /* padding: 100px 50px; */
+    padding: 50px;
+    /* padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-bottom: 70px; */
+    /* margin-top: 100px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-left: 150px; */
+    /* margin: 100px 150px 100px 150px; */
+    /* margin: 100px auto; */
+    margin-left: 100px;
+
+}
