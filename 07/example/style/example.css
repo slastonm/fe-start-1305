@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.test{
+    /* position: static; */
+
+    /* position: sticky; */
+    /* position: fixed; */
+    /* position: absolute; */
+    /* position: relative; */
+
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+
+    /* z-index: 0-999; */
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: orange;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+p{
+    width: 1250px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+.up{
+    background-color: green;
+    padding: 20px;
+    position: fixed;
+    /* top: 1000px; */
+    bottom: 100px;
+    /* left: 1900px; */
+    right: 100px;
+}
+.up a{
+    color: white;
+    font-size: 18px;
+}
+.absolut{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.absolut.first{
+    position: absolute;
+    border: 2px solid black;
+    top: 150px;
+    left: 150px;
+}
+.absolut.second{
+    bottom: 500px;
+    right: 500px;
+    position: absolute;
+}
+.relative{
+    background-color: gray;
+    color: white;
+    padding: 50px;
+    height: 500px; 
+    margin-bottom: 50px;
+    position: relative;
+}
+.relative.first{
+    border: 8px solid salmon;
+    /* top: 400px; */
+    /* left: 100px; */
+}
+.notification-btn{
+    position: relative;
+    padding: 20px 40px;
+    background-color: blue;
+    color: yellow;
+}
+.notification-btn span{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: yellow;
+    color: blue;
+    font-size: 12px;
+}
+.price{
+    background-color: gold;
+    padding: 20px;
+}
+.price::before{
+    content: 'Price:';
+}
+.price::after{
+    content: "$";
+}
+nav{
+    padding: 20px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+nav a{
+    border: 2px solid rgb(66, 18, 18);
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+}
+nav a::after{
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    right: -10px;
+}
+
+nav a:last-child::after{
+    /* background-color: red; */
+    /* display: none; */
+    opacity: 0.5;
+}
+.next-btn{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.next-btn:hover{
+    border: 2px solid red;
+    background-color: black;
+    color: red;
+}
