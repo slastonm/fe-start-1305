@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: black;
+}
+.contanier{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    row-gap: 30px;
+}
+.logo,
+.user{
+    width: 100%;
+    background-color: rgb(180, 171, 171);
+    padding: 20px;
+    text-align: center;
+}
+
+/* @media screen and (max-width:1000px) {
+    .contanier{
+        width: 90%;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .logo,
+    .user{
+        width: 100%;
+        background-color: rgb(224, 15, 15);
+        padding: 40px;
+        text-align: center;
+    }   
+}
+
+@media(max-width:600px){
+    .contanier{
+        width: 95%;
+        row-gap: 45px;
+    }
+    .logo,
+    .user{
+        background-color: rgb(116, 224, 15);
+        padding: 10px;
+        border: 4px solid white;
+    }   
+} */
+
+@media(min-width:800px){
+    .contanier{
+        width: 80%;
+        row-gap: 0;
+        flex-direction: row;
+    }
+    .logo,
+    .user{
+        background-color: rgb(116, 224, 15);
+        padding: 40px;
+        width: 40%;
+        border: 4px solid white;
+    }  
+}
+
+@media(min-width:1200px){
+    .logo,
+    .user{
+        background-color: rgb(15, 151, 224);
+        padding: 40px;
+        width: 45%;
+        border: 4px solid rgb(200, 104, 14);
+    }  
+}
+
+/* @media screen and (min-width:400px) and (max-width:800px){
+    .contanier{
+        background-color: palevioletred;
+    }
+} */
+
+@media (400px <= width <= 800px ){
+    .contanier{
+        background-color: rgb(226, 15, 15);
+    }
+}
+
+@media print{
+    .contanier{
+        border: 2px solid black;
+    }
+    .user,.logo{
+        padding: 0;
+        text-align: right;
+    }
+}
+
+
+@media(min-aspect-ratio: 8/5){
+    body{
+        background-color: black;
+    }
+}
+
+
+@media(max-aspect-ratio: 19/5){
+    body{
+        background-color: red;
+    }
+}
+
+/* em, rem */
+
+body, html{
+    font-size: 20px;
+}
+
+.em-size{
+    width: 40em;
+    margin: 3em auto;
+    padding: 2em 3em;
+    background-color: green;
+    /* font-size: 1.5em; */
+}
+.rem-size{
+    width: 40rem;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+    background-color: rgb(12, 220, 12);
+    font-size: 25px;
+}
+@media(min-width:1300px){
+    .em-size{
+        font-size: 20px;
+    }
+    .em-size{
+        font: 50px;
+    }
+    body, html{
+        font-size: 15px;
+    }
+}

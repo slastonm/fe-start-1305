@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: orange;
+    padding: 50px 0 100px ;
+}
+.wrapper{
+    /* padding: 0 100px; */
+    /* max-width: 1140px; */
+    /* min-width: 740px; */
+    width: 59%;
+    background-color: white;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.left-block{
+    background-color: blue;
+    padding: 10%;
+    /* max-width: 500px; */
+    width: 30.7%;
+}
+.left-block img{
+    width: 100%;
+}
+.right-block{
+    background-color: rgb(10, 175, 150);
+    padding: 10%;
+    /* max-width: 600px; */
+    /* min-width: 500px; */
+    width: 50%;
+}
+
+.vieport{
+    width: 50vw;
+    font-size: 10vw;
+    background-color: rgb(12, 213, 96); 
+    /* height: 100vh; */
+    min-height: 100vh;
+
+}
+.persent{
+    width: 50%;
+    background-color: rgb(29, 157, 237); 
+}
+.paretn{
+    max-width: 1000px;
+    height: 100px;
+    border: 2px solid red;
+}
