@@ -1,0 +1,6 @@
+/* .col-12{
+    max-width: 99%; не робіть ! Помилка
+} */
+ .my-full-with-col{
+    width: 99%;
+ }
